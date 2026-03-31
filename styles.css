@@ -289,7 +289,7 @@ section { padding: var(--space-3xl) var(--space-lg); }
   color: var(--color-cream);
 }
 
-/* ===== Education – Stacked horizontal cards with top accent ===== */
+/* ===== Education (same format as Skills) ===== */
 .education { background: var(--gradient-cream); }
 .education-grid {
   display: grid;
@@ -297,28 +297,24 @@ section { padding: var(--space-3xl) var(--space-lg); }
   margin-bottom: 0;
 }
 .education-block {
-  padding: var(--space-lg) var(--space-xl);
+  padding: var(--space-md) var(--space-lg);
   background: #fff;
   border-radius: var(--radius);
-  border-top: 3px solid var(--color-burgundy);
-  border-left: none;
+  border-left: 4px solid var(--color-burgundy);
   box-shadow: var(--shadow);
-  position: relative;
-  transition: box-shadow 0.25s ease;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 .education-block:hover {
-  box-shadow: 0 6px 20px rgba(45, 45, 45, 0.1);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(45, 45, 45, 0.08);
 }
 .education-date {
-  display: inline-block;
-  font-size: 0.8rem;
+  display: block;
+  font-size: 0.85rem;
   font-weight: 600;
-  color: var(--color-cream);
-  background: var(--color-burgundy);
-  padding: 2px var(--space-sm);
-  border-radius: 3px;
+  color: var(--color-burgundy);
   margin-bottom: var(--space-sm);
-  letter-spacing: 0.03em;
+  letter-spacing: 0.02em;
 }
 .education-block h3 {
   font-size: 1.1rem;
@@ -499,12 +495,6 @@ section { padding: var(--space-3xl) var(--space-lg); }
 .hobby-gallery.carousel:hover .carousel-btn {
   opacity: 1;
 }
-/* Show carousel buttons on touch devices */
-@media (hover: none) {
-  .carousel-btn {
-    opacity: 1;
-  }
-}
 .carousel-btn:hover {
   background: rgba(148, 61, 36, 0.7);
 }
@@ -552,7 +542,7 @@ section { padding: var(--space-3xl) var(--space-lg); }
   object-fit: contain;
 }
 
-/* ===== Work Experience – Left-bordered cards with inset date chip ===== */
+/* ===== Work Experience (Toby: section title, then role / org / date / bullets) ===== */
 .experience { background: var(--gradient-rose); }
 .timeline {
   display: flex;
@@ -560,15 +550,16 @@ section { padding: var(--space-3xl) var(--space-lg); }
   gap: var(--space-2xl);
 }
 .timeline-item {
-  padding: var(--space-lg) var(--space-xl);
+  padding: var(--space-md) var(--space-lg);
   background: #fff;
   border-radius: var(--radius);
   border-left: 4px solid var(--color-burgundy);
   box-shadow: var(--shadow);
-  transition: box-shadow 0.25s ease;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 .timeline-item:hover {
-  box-shadow: 0 6px 20px rgba(45, 45, 45, 0.1);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(45, 45, 45, 0.08);
 }
 .timeline-item .timeline-org-logo {
   width: 48px;
@@ -604,7 +595,7 @@ section { padding: var(--space-3xl) var(--space-lg); }
 .timeline-bullets li { margin-bottom: var(--space-sm); }
 .timeline-bullets li:last-child { margin-bottom: 0; }
 
-/* ===== Skills – Flat, borderless panels with lavender tint ===== */
+/* ===== Skills (Toby: Skills → Core Competencies, Technical Skills, Certifications) ===== */
 .skills { background: var(--color-sage); }
 .skills-grid {
   display: grid;
@@ -612,22 +603,22 @@ section { padding: var(--space-3xl) var(--space-lg); }
   margin-bottom: 0;
 }
 .skills-block {
-  padding: var(--space-lg) var(--space-xl);
-  background: var(--color-lavender);
+  padding: var(--space-md) var(--space-lg);
+  background: #fff;
   border-radius: var(--radius);
-  border-left: none;
-  box-shadow: none;
-  transition: background 0.25s ease;
+  border-left: 4px solid var(--color-burgundy);
+  box-shadow: var(--shadow);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 .skills-block:hover {
-  background: #ddd5f0;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(45, 45, 45, 0.08);
 }
 .skills-block h3 {
   font-size: 1.1rem;
   font-weight: 600;
-  color: var(--color-burgundy);
+  color: var(--color-charcoal);
   margin: 0 0 var(--space-md);
-  letter-spacing: 0.01em;
 }
 .skills-block p {
   margin: 0;
@@ -645,7 +636,7 @@ section { padding: var(--space-3xl) var(--space-lg); }
 .skills-block.certs li {
   margin-bottom: var(--space-md);
   padding-bottom: var(--space-md);
-  border-bottom: 1px solid rgba(45, 45, 45, 0.1);
+  border-bottom: 1px solid var(--color-border);
 }
 .skills-block.certs li:last-child {
   margin-bottom: 0;
@@ -665,7 +656,7 @@ section { padding: var(--space-3xl) var(--space-lg); }
   color: var(--color-burgundy);
 }
 
-/* ===== Research – Clean cards with bottom accent stripe ===== */
+/* ===== Research (Toby-style portfolio: cards + View link, then detail lists) ===== */
 .research { background: var(--color-rose); }
 .portfolio-grid {
   display: grid;
@@ -721,16 +712,11 @@ section { padding: var(--space-3xl) var(--space-lg); }
 }
 .research-item {
   margin-bottom: var(--space-lg);
-  padding: var(--space-lg) var(--space-xl);
+  padding: var(--space-md) var(--space-lg);
   background: #fff;
   border-radius: var(--radius);
-  border-left: none;
-  border-bottom: 3px solid var(--color-burgundy);
+  border-left: 4px solid var(--color-burgundy);
   box-shadow: var(--shadow);
-  transition: box-shadow 0.25s ease;
-}
-.research-item:hover {
-  box-shadow: 0 6px 20px rgba(45, 45, 45, 0.1);
 }
 .research-item:last-child { margin-bottom: 0; }
 .research-item-title {
