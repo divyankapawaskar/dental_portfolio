@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Divyanka Pawaskar | Dental School Applicant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="Main">
+      <a href="index.html" class="nav-logo">Divyanka Pawaskar</a>
+      <button type="button" class="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li class="has-dropdown">
+          <a href="index.html#education">Education</a>
+          <ul class="dropdown">
+            <li><a href="index.html#edu-ub">M.S. Epidemiology (UB)</a></li>
+            <li><a href="index.html#edu-bds">BDS (Maharashtra)</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown">
+          <a href="index.html#experience">Experience</a>
+          <ul class="dropdown">
+            <li><a href="index.html#exp-research-scientist">Research Scientist</a></li>
+            <li><a href="index.html#exp-epidemiologist">Epidemiologist</a></li>
+            <li><a href="index.html#exp-healthcare-researcher">Healthcare Researcher</a></li>
+            <li><a href="index.html#exp-teaching-assistant">Teaching Assistant</a></li>
+            <li><a href="index.html#exp-aids-intern">AIDS Institute Intern</a></li>
+            <li><a href="index.html#exp-path-intern">Epidemic Preparedness Intern</a></li>
+            <li><a href="index.html#exp-resident-medical-officer">Resident Medical Officer</a></li>
+            <li><a href="index.html#exp-dentist">Dentist</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown">
+          <a href="index.html#research">Research</a>
+          <ul class="dropdown">
+            <li><a href="index.html#research-publications">Publications</a></li>
+            <li><a href="index.html#research-presentations">Conference Presentations</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown">
+          <a href="index.html#skills">Skills</a>
+          <ul class="dropdown">
+            <li><a href="index.html#skills-core">Core Competencies</a></li>
+            <li><a href="index.html#skills-technical">Technical Skills</a></li>
+            <li><a href="index.html#skills-certs">Certifications</a></li>
+          </ul>
+        </li>
+        <li><a href="index.html#volunteer">Volunteer Work</a></li>
+        <li><a href="life-outside-work.html">Beyond Work</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-inner container">
+        <div class="hero-content">
+          <h2 class="hero-label">This is Me!</h2>
+          <h1 class="hero-title">Divyanka Pawaskar</h1>
+          <p class="hero-bio">
+            My journey in healthcare began with dentistry and later expanded through public health and research. Along the way, I developed a deeper understanding of the oral-systemic connection and how prevention, access, and early intervention shape patient outcomes.
+          </p>
+          <p class="hero-bio">
+            I now bring that broader perspective back to clinical dentistry, focused on developing strong technical skills and delivering comprehensive, whole-patient care.
+          </p>
+          <a href="about.html" class="btn btn-primary">Read More</a>
+        </div>
+        <div class="hero-image">
+          <img src="images/hero-blazer.png" alt="Divyanka Pawaskar, professional portrait" />
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="education">
+      <div class="container">
+        <h2 class="section-title">Education</h2>
+        <div class="education-grid">
+          <div id="edu-ub" class="education-block">
+            <span class="education-date">Sept 2021 – Aug 2023</span>
+            <h3>Master of Science, Epidemiology | <span class="education-gpa">GPA: 3.97/4.00</span></h3>
+            <p>State University of New York at Buffalo</p>
+            <p class="education-extra"><span class="education-label">Thesis</span></p>
+          </div>
+          <div id="edu-bds" class="education-block">
+            <span class="education-date">Oct 2015 – Jan 2021</span>
+            <h3>Bachelor of Dental Surgery (BDS) | <span class="education-gpa">GPA: 4.0/4.0</span></h3>
+            <p>Sinhgad Dental College and Hospital | Maharashtra University of Health Sciences</p>
+            <p class="education-extra"><span class="education-label">Internship:</span> <span class="education-extra-value"></span></p>
+            <p class="education-extra"><span class="education-label">Thesis:</span> <span class="education-extra-value"></span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="experience">
+      <div class="container">
+        <h2 class="section-title">Work Experience</h2>
+        <div class="timeline">
+          <article id="exp-research-scientist" class="timeline-item">
+            <h3 class="timeline-role">Research Scientist</h3>
+            <h4 class="timeline-org">New York State Department of Health</h4>
+            <p class="timeline-date">Feb 2024 – Present</p>
+            <ul class="timeline-bullets">
+              <li>Lead adoption of Splink (Python) for scalable probabilistic record linkage of multi-year injury, hospitalization, and ED datasets (~600,000 records/year).</li>
+              <li>Link and manage large-scale health data using ICD-10-CM, SQL, Python, R, and SAS; author technical reports and build interactive dashboards in R and Tableau.</li>
+              <li>Perform spatial analyses and build bivariate choropleth maps to visualize crash locations and inform policy.</li>
+              <li>Train and mentor Research Scientists on CODES surveillance methodology and probabilistic linkage practices.</li>
+            </ul>
+          </article>
+          <article id="exp-epidemiologist" class="timeline-item">
+            <h3 class="timeline-role">Epidemiologist</h3>
+            <h4 class="timeline-org">Hawaii State Department of Health</h4>
+            <p class="timeline-date">Sep 2023 – Feb 2024</p>
+            <ul class="timeline-bullets">
+              <li>Conducted GIS-based, equity-focused analyses on stroke care disparities among Native Hawaiian and Pacific Islander populations.</li>
+              <li>Delivered analytic and technical consultation to statewide cardiovascular health programs.</li>
+            </ul>
+          </article>
+          <article id="exp-healthcare-researcher" class="timeline-item">
+            <h3 class="timeline-role">Healthcare Researcher</h3>
+            <h4 class="timeline-org">Roswell Park Comprehensive Cancer Center</h4>
+            <p class="timeline-date">Sep 2022 – Aug 2023</p>
+            <ul class="timeline-bullets">
+              <li>Designed epidemiological studies on COVID-19 impact on cancer care using ICD-10-CM, regression analysis; managed EHR and dental record data with SAS and Python (IRB/HIPAA compliant).</li>
+              <li>Co-authored two papers (in review) on pandemic preparedness in oral healthcare delivery for cancer patients.</li>
+            </ul>
+          </article>
+          <article id="exp-teaching-assistant" class="timeline-item">
+            <h3 class="timeline-role">Teaching Assistant</h3>
+            <h4 class="timeline-org">University at Buffalo, School of Public Health and Health Professions</h4>
+            <p class="timeline-date">Sep 2022 – May 2023</p>
+            <ul class="timeline-bullets">
+              <li>Supported 600+ students with lectures, discussions, office hours, and grading; taught tobacco use, nicotine addiction, and U.S. tobacco regulations.</li>
+            </ul>
+          </article>
+          <article id="exp-aids-intern" class="timeline-item">
+            <h3 class="timeline-role">AIDS Institute Intern</h3>
+            <h4 class="timeline-org">New York State Department of Health</h4>
+            <p class="timeline-date">May 2022 – Aug 2022</p>
+            <ul class="timeline-bullets">
+              <li>Conducted quantitative analyses of HIV surveillance and care retention data using SAS and Excel; contributed to conference presentations on linkage and retention in care.</li>
+            </ul>
+          </article>
+          <article id="exp-path-intern" class="timeline-item">
+            <h3 class="timeline-role">Epidemic Preparedness and Response Intern</h3>
+            <h4 class="timeline-org">PATH</h4>
+            <p class="timeline-date">May 2022 – Aug 2022</p>
+            <ul class="timeline-bullets">
+              <li>Managed USAID-funded IDDS deliverables; contributed to proposal writing for Antimicrobial Stewardship (Uganda) and LGHS; published web article on healthcare-associated infections in Vietnam.</li>
+            </ul>
+          </article>
+          <article id="exp-resident-medical-officer" class="timeline-item">
+            <h3 class="timeline-role">Resident Medical Officer</h3>
+            <h4 class="timeline-org">Municipal Corporation of Greater Mumbai</h4>
+            <p class="timeline-date">Apr 2021 – May 2021</p>
+            <ul class="timeline-bullets">
+              <li>Provided frontline medical care to 1,000+ COVID-19 patients, including oral health needs and overall patient well-being.</li>
+            </ul>
+          </article>
+          <article id="exp-dentist" class="timeline-item">
+            <h3 class="timeline-role">Dentist</h3>
+            <h4 class="timeline-org">Sinhgad Dental College and Hospital</h4>
+            <p class="timeline-date">Sep 2019 – Jan 2021</p>
+            <ul class="timeline-bullets">
+              <li>Delivered comprehensive dental care to 500+ patients: preventive and therapeutic treatments, patient counseling, and oral health education.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="volunteer" class="education">
+      <div class="container">
+        <h2 class="section-title">Volunteer Work</h2>
+        <div class="timeline">
+          <article class="timeline-item">
+            <h3 class="timeline-role">Reviewer</h3>
+            <h4 class="timeline-org">Journal of Emerging Investigators, Inc</h4>
+            <p class="timeline-date">May 2023 – May 2024</p>
+            <ul class="timeline-bullets">
+              <li>Reviewed manuscripts for the Journal of Emerging Investigators.</li>
+            </ul>
+          </article>
+          <article class="timeline-item">
+            <h3 class="timeline-role">Abstract Reviewer</h3>
+            <h4 class="timeline-org">APHA Oral Health Section</h4>
+            <p class="timeline-date">Apr 2023 – May 2023</p>
+            <ul class="timeline-bullets">
+              <li>Reviewed abstracts for the APHA Oral Health Section.</li>
+            </ul>
+          </article>
+          <article class="timeline-item">
+            <h3 class="timeline-role">Research Volunteer</h3>
+            <h4 class="timeline-org">New York State Department of Health</h4>
+            <p class="timeline-date">May 2022 – Aug 2022</p>
+            <ul class="timeline-bullets">
+              <li>Analyzed deidentified HIV care data from 6 organizations in the Western New York region with Excel and SAS to assess COVID-19's impact on HIV linkage to care and retention outcomes. Results: The viral load suppression rate was maintained across the WNY region during COVID-19 despite a reduction in viral load testing. This project led to a conference presentation at the 2023 IAPAC conference.</li>
+              <li>Conducted quantitative analyses of HIV surveillance and care retention data using SAS and Excel, supporting program evaluation and policy development.</li>
+              <li>Contributed to conference presentations highlighting findings on linkage to care and retention in care among people living with HIV (PLWH).</li>
+            </ul>
+          </article>
+          <article class="timeline-item">
+            <h3 class="timeline-role">Director of Community Services</h3>
+            <h4 class="timeline-org">Rotaract</h4>
+            <p class="timeline-date">Jun 2019 – Jun 2020</p>
+            <ul class="timeline-bullets">
+              <li>Organized, managed, and volunteered for several community service events including toothbrushing events, dental camps, menstrual hygiene awareness programs, sanitary napkin donation, and advocacy against gender-based violence.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="experience">
+      <div class="container">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid">
+          <div id="skills-core" class="skills-block">
+            <h3>Core Competencies</h3>
+            <p>Epidemiological study design · Data analysis &amp; visualization · Probabilistic linkage · Multi-source data integration · Public health surveillance · Program &amp; policy evaluation · Cross-functional collaboration · Stakeholder communication · Mentorship &amp; teaching · Project management · Manuscript &amp; proposal writing · Grant development</p>
+          </div>
+          <div id="skills-technical" class="skills-block">
+            <h3>Technical Skills</h3>
+            <p>SAS · R · Python (pandas, Splink, NumPy, SciPy) · Tableau · GIS · Excel · SQL · Stata · R Shiny · ggplot2 · ETL pipelines · Bayesian methods · Regression &amp; survival analysis · Spatial &amp; time-series analysis</p>
+          </div>
+          <div id="skills-certs" class="skills-block certs">
+            <h3>Certifications</h3>
+            <ul>
+              <li><span class="cert-title">Missing Data And Multiple Imputations, Columbia University Mailman School of Public Health</span><span class="cert-meta">2024</span></li>
+              <li><span class="cert-title">Basic Life Support for Healthcare Providers (BLS), Maharashtra University of Health Sciences</span><span class="cert-meta">2017</span></li>
+              <li><span class="cert-title">Biomedical Research - Basic/Refresher, CITI Program</span><span class="cert-meta">2022</span></li>
+              <li><span class="cert-title">Biomedical &amp; Social/Behavioral Responsible Conduct of Research, CITI Program</span><span class="cert-meta">2021</span></li>
+              <li><span class="cert-title">Essential Epidemiological Tools For Public Health, Johns Hopkins Bloomberg School of Public Health</span><span class="cert-meta">2021</span></li>
+              <li><span class="cert-title">Dental License, Maharashtra State Dental Council</span><span class="cert-meta">2021</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="research" class="education">
+      <div class="container">
+        <h2 class="section-title">Research</h2>
+        <div id="research-publications" class="research-detail">
+          <h3>Publications</h3>
+          <ul class="research-list">
+            <li class="research-item">
+              <span class="research-item-title">A Cross-Sectional Study on the Incidence of Medication-Related Osteonecrosis of the Jaw (MRONJ) Among Cancer Patients Prior to and During the COVID-19 Pandemic</span>
+              <span class="research-item-meta">Manuscript under revision for resubmission</span>
+            </li>
+            <li class="research-item">
+              <span class="research-item-title">The Impact of COVID-19–Related Workflow Changes on Cancer Patient Behaviors and Compliance</span>
+              <span class="research-item-meta">Manuscript in preparation</span>
+            </li>
+            <li class="research-item">
+              <span class="research-item-title">Monitoring Healthcare-Associated Infections in Vietnam</span>
+              <span class="research-item-meta">Published — <a href="https://www.path.org/our-impact/articles/monitoring-health-careassociated-infections-in-vietnam/" target="_blank" rel="noopener noreferrer">Read article</a></span>
+            </li>
+          </ul>
+        </div>
+        <div id="research-presentations" class="research-detail">
+          <h3>Conference Presentations</h3>
+          <ul class="research-list">
+            <li class="research-item">
+              <span class="research-item-title">Disparities in Restraint Use Among Crash Victims in New York State: A Rural vs. Urban Analysis</span>
+              <span class="research-item-meta">ATSIP 2025</span>
+            </li>
+            <li class="research-item">
+              <span class="research-item-title">The Impact of COVID-19 on HIV Viral Suppression in New York State: 2018–2021</span>
+              <span class="research-item-meta">2024 National Ryan White Conference</span>
+            </li>
+            <li class="research-item">
+              <span class="research-item-title">VLS Rates Maintained Due to COVID-19 Adaptation for HIV Patients in Western New York</span>
+              <span class="research-item-meta">IAPAC 2023</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="experience">
+      <div class="container">
+        <h2 class="section-title">Get in touch</h2>
+        <p class="contact-intro">If you are interested in getting in touch with me, please reach out via email or LinkedIn. I look forward to connecting.</p>
+        <div class="contact-links">
+          <a href="mailto:pawaskardivyanka@gmail.com" class="contact-link">pawaskardivyanka@gmail.com</a>
+          <a href="https://www.linkedin.com/in/divyankapawaskar/" target="_blank" rel="noopener noreferrer" class="contact-link">LinkedIn</a>
+        </div>
+        <a href="Divyanka_Pawaskar_CV_Sept2025.pdf" class="btn btn-primary" target="_blank" rel="noopener">Download CV</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Divyanka Pawaskar</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
